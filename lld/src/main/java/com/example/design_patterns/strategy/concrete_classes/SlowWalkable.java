@@ -1,6 +1,6 @@
-package com.example.lld.design_patterns.strategy.concrete_classes;
+package com.example.design_patterns.strategy.concrete_classes;
 
-import com.example.lld.design_patterns.strategy.interfaces.Walkable;
+import com.example.design_patterns.strategy.interfaces.Walkable;
 
 public class SlowWalkable implements Walkable{
 

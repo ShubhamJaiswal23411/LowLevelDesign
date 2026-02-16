@@ -1,12 +1,12 @@
-package com.example.lld.design_patterns.strategy.main;
+package com.example.design_patterns.strategy.main;
 
-import com.example.lld.design_patterns.strategy.concrete_classes.FastWalkable;
-import com.example.lld.design_patterns.strategy.concrete_classes.SlowTalkable;
-import com.example.lld.design_patterns.strategy.interfaces.Walkable;
-import com.example.lld.design_patterns.strategy.abstract_classes.RobotTemplate;
-import com.example.lld.design_patterns.strategy.concrete_classes.FastReadable;
-import com.example.lld.design_patterns.strategy.interfaces.Tallkable;
-import com.example.lld.design_patterns.strategy.interfaces.Readable;
+import com.example.design_patterns.strategy.abstract_classes.RobotTemplate;
+import com.example.design_patterns.strategy.concrete_classes.FastReadable;
+import com.example.design_patterns.strategy.concrete_classes.FastWalkable;
+import com.example.design_patterns.strategy.concrete_classes.SlowTalkable;
+import com.example.design_patterns.strategy.interfaces.Readable;
+import com.example.design_patterns.strategy.interfaces.Tallkable;
+import com.example.design_patterns.strategy.interfaces.Walkable;
 
 public class Robot extends RobotTemplate {
 

@@ -1,4 +1,4 @@
-package com.example.lld.design_patterns.singleton;
+package com.example.design_patterns.singleton;
 
 public class SingletonEager {
 

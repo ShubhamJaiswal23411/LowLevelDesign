@@ -1,6 +1,6 @@
-package com.example.lld.design_patterns.strategy.concrete_classes;
+package com.example.design_patterns.strategy.concrete_classes;
 
-import com.example.lld.design_patterns.strategy.interfaces.Tallkable;
+import com.example.design_patterns.strategy.interfaces.Tallkable;
 
 public class SlowTalkable implements Tallkable{
 

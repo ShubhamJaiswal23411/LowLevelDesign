@@ -1,8 +1,8 @@
-package com.example.lld.design_patterns.strategy.abstract_classes;
+package com.example.design_patterns.strategy.abstract_classes;
 
-import com.example.lld.design_patterns.strategy.interfaces.Tallkable;
-import com.example.lld.design_patterns.strategy.interfaces.Walkable;
-import com.example.lld.design_patterns.strategy.interfaces.Readable;
+import com.example.design_patterns.strategy.interfaces.Readable;
+import com.example.design_patterns.strategy.interfaces.Tallkable;
+import com.example.design_patterns.strategy.interfaces.Walkable;
 
 public abstract class RobotTemplate {
     private Readable readable ;
