@@ -1,0 +1,30 @@
+package com.example.lld.design_patterns.strategy.main;
+
+import com.example.lld.design_patterns.strategy.concrete_classes.FastWalkable;
+import com.example.lld.design_patterns.strategy.concrete_classes.SlowTalkable;
+import com.example.lld.design_patterns.strategy.interfaces.Walkable;
+import com.example.lld.design_patterns.strategy.abstract_classes.RobotTemplate;
+import com.example.lld.design_patterns.strategy.concrete_classes.FastReadable;
+import com.example.lld.design_patterns.strategy.interfaces.Tallkable;
+import com.example.lld.design_patterns.strategy.interfaces.Readable;
+
+public class Robot extends RobotTemplate {
+
+    public Robot(Readable readable, Tallkable talkable, Walkable walkable) {
+        super(readable, talkable, walkable);
+    }
+
+    public static void main(String[] args) {
+        RobotTemplate robot = new Robot(new FastReadable(), new SlowTalkable(), new FastWalkable());
+        System.out.println(robot.read());
+        System.out.println(robot.talk());
+        System.out.println(robot.walk());
+                
+    }
+
+    @Override
+    public void projection() {
+        System.out.println("okay i am robot class and i am overriding the robotTemplate abstract class's method projection");
+    }
+
+}
