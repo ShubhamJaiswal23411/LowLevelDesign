@@ -1,13 +1,13 @@
-package com.example.app_design;
+package com.example.google_docs;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AppDesignApplication {
+public class GoogleDocsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AppDesignApplication.class, args);
+		SpringApplication.run(GoogleDocsApplication.class, args);
 	}
 
 }
