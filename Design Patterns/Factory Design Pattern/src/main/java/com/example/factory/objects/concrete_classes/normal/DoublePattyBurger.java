@@ -7,13 +7,9 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class DoublePattyBurger implements Burger {
 
-    public DoublePattyBurger() {
-        log.info("Creating double patty burger");
-    }
-
     @Override
-    public Burger prepareBurger() {
-        return new DoublePattyBurger();
+    public void prepareBurger() {
+        log.info("Creating double patty burger");
     }
 
 }

@@ -2,9 +2,6 @@ package com.example.factory.object_creation.concrete_classes;
 
 import com.example.factory.enums.BurgerType;
 import com.example.factory.object_creation.interfaces.BurgerFactory;
-import com.example.factory.objects.concrete_classes.normal.DoublePattyBurger;
-import com.example.factory.objects.concrete_classes.normal.PremiumBurger;
-import com.example.factory.objects.concrete_classes.normal.SimpleBurger;
 import com.example.factory.objects.concrete_classes.wheat.DoublePattyWheatBurger;
 import com.example.factory.objects.concrete_classes.wheat.PremiumWheatBurger;
 import com.example.factory.objects.concrete_classes.wheat.SimpleWheatBuger;

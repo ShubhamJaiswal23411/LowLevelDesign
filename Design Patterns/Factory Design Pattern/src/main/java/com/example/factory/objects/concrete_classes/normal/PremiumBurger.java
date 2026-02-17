@@ -7,13 +7,9 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class PremiumBurger implements Burger {
 
-    public PremiumBurger() {
-        log.info("Creating premium burger");
-    }
-
     @Override
-    public Burger prepareBurger() {
-        return new PremiumBurger();
+    public void prepareBurger() {
+        log.info("Creating premium burger");
     }
 
 }
