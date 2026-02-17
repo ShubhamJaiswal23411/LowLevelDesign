@@ -15,21 +15,18 @@ public class Client {
         BurgerFactory burgerFactory = new KingBurgerFactory();
         BurgerFactory burgerFactory2 = new KingWheatBurgerFactory();
 
-
         List<Burger> orderList = new ArrayList<>();
         orderList.add(burgerFactory.createBurger(BurgerType.DOUBLE_PATTY_BURGER));
         orderList.add(burgerFactory.createBurger(BurgerType.PREMIUM_BURGER));
         orderList.add(burgerFactory.createBurger(BurgerType.SIMPLE_BURGER));
-        
 
         orderList.add(burgerFactory2.createBurger(BurgerType.DOUBLE_PATTY_BURGER));
         orderList.add(burgerFactory2.createBurger(BurgerType.SIMPLE_BURGER));
 
-
-        for(Burger curBurger : orderList){
+        for (Burger curBurger : orderList) {
             curBurger.prepareBurger();
         }
 
     }
-    
+
 }
