@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 public class SimpleBurger implements Burger {
 
     @Override
-    public void prepareBurger() {
+    public void prepare() {
         log.info("Creating simple burger");
     }
 

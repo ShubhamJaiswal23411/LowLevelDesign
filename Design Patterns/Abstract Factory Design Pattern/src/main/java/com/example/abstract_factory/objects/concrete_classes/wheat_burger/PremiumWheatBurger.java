@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 public class PremiumWheatBurger implements Burger{
 
     @Override
-    public void prepareBurger() {
+    public void prepare() {
         log.info("Creating a Premium wheat burger");
     }
     

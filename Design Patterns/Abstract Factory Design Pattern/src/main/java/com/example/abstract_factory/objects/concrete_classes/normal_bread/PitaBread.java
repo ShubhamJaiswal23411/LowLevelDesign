@@ -7,7 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class PitaBread implements Bread {
     @Override
-    public void prepareBread() {
+    public void prepare() {
         log.info("Preparing pita bread without garlic");
     }
 

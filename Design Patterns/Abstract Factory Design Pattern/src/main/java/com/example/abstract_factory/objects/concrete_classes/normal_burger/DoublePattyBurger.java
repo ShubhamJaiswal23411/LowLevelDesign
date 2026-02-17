@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 public class DoublePattyBurger implements Burger {
 
     @Override
-    public void prepareBurger() {
+    public void prepare() {
         log.info("Creating double patty burger");
     }
 

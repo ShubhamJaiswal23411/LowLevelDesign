@@ -1,5 +1,5 @@
 package com.example.abstract_factory.objects.interfaces;
 
-public interface Burger extends MenuItem{
+public interface MenuItem {
     public void prepare();
 }

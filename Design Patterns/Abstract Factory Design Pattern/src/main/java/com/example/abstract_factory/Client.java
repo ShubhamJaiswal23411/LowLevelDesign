@@ -10,6 +10,7 @@ import com.example.abstract_factory.object_creation.concrete_classes.Kfc;
 import com.example.abstract_factory.object_creation.interfaces.FastFoodFactory;
 import com.example.abstract_factory.objects.interfaces.Bread;
 import com.example.abstract_factory.objects.interfaces.Burger;
+import com.example.abstract_factory.objects.interfaces.MenuItem;
 
 public class Client {
 
@@ -17,26 +18,21 @@ public class Client {
         FastFoodFactory burgerKing = new BurgerKing();
         FastFoodFactory kfc = new Kfc();
 
-        List<Burger> bugerOrderList = new ArrayList<>();
-        bugerOrderList.add(burgerKing.createBurger(BurgerType.DOUBLE_PATTY_BURGER));
-        bugerOrderList.add(burgerKing.createBurger(BurgerType.PREMIUM_BURGER));
-        bugerOrderList.add(burgerKing.createBurger(BurgerType.SIMPLE_BURGER));
+        List<MenuItem> orders = new ArrayList<>();
+        orders.add(burgerKing.createBurger(BurgerType.DOUBLE_PATTY_BURGER));
+        orders.add(burgerKing.createBurger(BurgerType.PREMIUM_BURGER));
+        orders.add(burgerKing.createBurger(BurgerType.SIMPLE_BURGER));
 
-        bugerOrderList.add(kfc.createBurger(BurgerType.DOUBLE_PATTY_BURGER));
-        bugerOrderList.add(kfc.createBurger(BurgerType.SIMPLE_BURGER));
+        orders.add(kfc.createBurger(BurgerType.DOUBLE_PATTY_BURGER));
+        orders.add(kfc.createBurger(BurgerType.SIMPLE_BURGER));
 
-        for (Burger curBurger : bugerOrderList) {
-            curBurger.prepareBurger();
-        }
+        orders.add(burgerKing.createBread(BreadType.PITA));
+        orders.add(burgerKing.createBread(BreadType.SOUR_DOUGH));
+        orders.add(kfc.createBread(BreadType.PITA));
+        orders.add(kfc.createBread(BreadType.SOUR_DOUGH));
 
-        List<Bread> breadOrderList = new ArrayList<>();
-        breadOrderList.add(burgerKing.createBread(BreadType.PITA));
-        breadOrderList.add(burgerKing.createBread(BreadType.SOUR_DOUGH));
-        breadOrderList.add(kfc.createBread(BreadType.PITA));
-        breadOrderList.add(kfc.createBread(BreadType.SOUR_DOUGH));
-
-        for (Bread cuBread : breadOrderList){
-            cuBread.prepareBread();
+        for (MenuItem item : orders){
+            item.prepare();
         }
     }
 

@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 public class SourDoughBread implements Bread{
 
     @Override
-    public void prepareBread() {
+    public void prepare() {
        log.info("Preparing sour dough bread without garlic");
     }
     
