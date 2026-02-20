@@ -2,14 +2,13 @@ package com.example.abstract_factory;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 import com.example.abstract_factory.enums.BreadType;
 import com.example.abstract_factory.enums.BurgerType;
 import com.example.abstract_factory.object_creation.concrete_classes.BurgerKing;
 import com.example.abstract_factory.object_creation.concrete_classes.Kfc;
 import com.example.abstract_factory.object_creation.interfaces.FastFoodFactory;
-import com.example.abstract_factory.objects.interfaces.Bread;
-import com.example.abstract_factory.objects.interfaces.Burger;
 import com.example.abstract_factory.objects.interfaces.MenuItem;
 
 public class Client {
@@ -31,9 +30,10 @@ public class Client {
         orders.add(kfc.createBread(BreadType.PITA));
         orders.add(kfc.createBread(BreadType.SOUR_DOUGH));
 
-        for (MenuItem item : orders){
+        for (MenuItem item : orders) {
             item.prepare();
         }
+
     }
 
 }
