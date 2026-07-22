@@ -5,10 +5,11 @@ public class Singleton {
     private static Singleton singletonInstance;
 
     private Singleton() {
-        if (singletonInstance!=null)
-        throw new IllegalAccessError("You are not supposed to call this constuctor");
+        if (singletonInstance != null) {
+            throw new IllegalAccessError("You are not supposed to call this constuctor after object creation");
+        }
     }
-    
+
     public static Singleton getInstance() {
 
         if (singletonInstance == null) {
